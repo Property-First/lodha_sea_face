@@ -299,7 +299,7 @@ btn.addEventListener("click",()=>{
 
 modal.style.display="flex";
 
-document.body.style.overflow="hidden";
+// document.body.style.overflow="hidden";
 
 });
 
@@ -309,7 +309,7 @@ close.addEventListener("click",()=>{
 
 modal.style.display="none";
 
-document.body.style.overflow="auto";
+// document.body.style.overflow="auto";
 
 });
 
