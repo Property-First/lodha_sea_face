@@ -64,7 +64,7 @@ a{
 
 .logo span{
 
-    color:#D4AF37;
+    color:#C8A95A;
 
 }
 
@@ -110,7 +110,7 @@ nav a::after{
 
     bottom:-8px;
 
-    background:#D4AF37;
+    background:#C8A95A;
 
     transition:.35s;
 
@@ -118,7 +118,7 @@ nav a::after{
 
 nav a:hover{
 
-    color:#D4AF37;
+    color:#C8A95A;
 
 }
 
@@ -136,7 +136,7 @@ nav a:hover::after{
 
     border-radius:50px;
 
-    background:#D4AF37;
+    background:#C8A95A;
 
     color:#fff;
 
@@ -705,7 +705,7 @@ section{
 
 .section-title span{
 
-    color:#D4AF37;
+    color:#C8A95A;
     letter-spacing:5px;
     font-size:14px;
     font-weight:700;
@@ -768,14 +768,14 @@ section{
 
 .tab-btn:hover{
 
-    background:#D4AF37;
+    background:#C8A95A;
     color:#07111F;
 
 }
 
 .tab-btn.active{
 
-    background:#D4AF37;
+    background:#C8A95A;
     color:#fff;
     font-weight:700;
 
@@ -902,13 +902,13 @@ section{
 
     transform:translateY(-8px);
 
-    border-color:#D4AF37;
+    border-color:#C8A95A;
 
 }
 
 .info-box h4{
 
-    color:#D4AF37;
+    color:#C8A95A;
 
     margin-bottom:8px;
 
@@ -928,7 +928,7 @@ section{
 
     padding:16px 35px;
 
-    background:#D4AF37;
+    background:#C8A95A;
 
     color:#fff;
 
@@ -1455,7 +1455,7 @@ section{
 
     padding:15px 35px;
 
-    background:#D4AF37;
+    background:#C8A95A;
 
     color:#fff;
 
@@ -1743,7 +1743,7 @@ font-size: 12px;
 
 .close-gallery:hover{
 
-    background:#D4AF37;
+    background:#C8A95A;
 
     color:#111;
 
@@ -2054,7 +2054,7 @@ font-size:40px;
 
     border:none;
 
-    background:#D4AF37;
+    background:#C8A95A;
 
     color:#fff;
 
@@ -2080,7 +2080,7 @@ font-size:40px;
 
 .contact-right span{
 
-    color:#D4AF37;
+    color:#C8A95A;
 
     letter-spacing:3px;
 
@@ -2125,7 +2125,7 @@ font-size:40px;
 
 .contact-right input:focus{
 
-    border-color:#D4AF37;
+    border-color:#C8A95A;
 
 }
 
@@ -2137,7 +2137,7 @@ font-size:40px;
 
     border:none;
 
-    background:#D4AF37;
+    background:#C8A95A;
 
     color:#fff;
 
@@ -2252,7 +2252,7 @@ gap:20px;
   background: #fff;
   padding: 15px;
   border-radius: 8px;
-  border-left: 4px solid #D4AF37;
+  border-left: 4px solid #C8A95A;
   margin-bottom: 20px;
 }
 
@@ -2433,7 +2433,7 @@ transform:scale(1);
 
 .project-info span{
 
-    color:#D4AF37;
+    color:#C8A95A;
 
     letter-spacing:3px;
 
@@ -2495,7 +2495,7 @@ transform:scale(1);
 
 .modal-right input:focus{
 
-    border-color:#D4AF37;
+    border-color:#C8A95A;
 
 }
 
@@ -2507,7 +2507,7 @@ transform:scale(1);
 
     border:none;
 
-    background:#D4AF37;
+    background:#C8A95A;
 
     color:#fff;
 
