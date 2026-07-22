@@ -73,7 +73,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
          alt="Sea Facing Property">
 
     <!-- Mobile Image -->
-    <img src="assets/images/LODHA_SEA_VERTICAL.png"
+    <img src="assets/images/LODHA_SEA_FACE_BANNER_VERTICAL.png"
          class="hero-image mobile-image"
          alt="Sea Facing Property">
 
@@ -225,7 +225,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
 
         <div class="plan-image">
 
-            <img src="/assets/images/floor-1.png" alt="3 BHK Floor Plan" style="filter: blur(5px);" class="open-modal">
+            <img src="./assets/images/floor-1.png" alt="3 BHK Floor Plan" style="filter: blur(5px);" class="open-modal">
 
         </div>
 
@@ -268,9 +268,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
                     Download Plan
                 </a>
 
-                <a href="#" class="btn-secondary">
-                    Book Site Visit
-                </a>
+                
 
             </div>
 
@@ -284,7 +282,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
 
         <div class="plan-image">
 
-            <img src="/assets/images/floor-1.png" alt="4 BHK Floor Plan" style="filter: blur(5px);" class="open-modal">
+            <img src="./assets/images/floor-1.png" alt="4 BHK Floor Plan" style="filter: blur(5px);" class="open-modal">
 
         </div>
 
@@ -752,40 +750,60 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
 
             </p>
 
-            <form>
-
-                <input type="text" placeholder="Full Name">
-
-                <input type="email" placeholder="Email Address">
-
-                <input type="tel" placeholder="Phone Number">
-                <div class="checkbox-group">
+          <form action="./send-email.php" method="POST">
 
     <input
-        type="checkbox"
-        id="terms"
-        checked
+        type="text"
+        name="name"
+        placeholder="Full Name"
         required>
 
-    <label for="terms">
+    <input
+        type="email"
+        name="email"
+        placeholder="Email Address"
+        required>
 
-        I agree to the
-        <a href="./terms_condition.html">Terms & Conditions</a>
-        and
-        <a href="./privacy-policy.html">Privacy Policy</a>.
-        I consent to being contacted via call, SMS, WhatsApp, or email regarding this project.
+    <input
+        type="tel"
+        name="phone"
+        placeholder="Phone Number"
+        pattern="[0-9]{10}"
+        maxlength="10"
+        required>
 
-    </label>
+    <div class="checkbox-group">
 
-</div>
+        <input
+            type="checkbox"
+            id="terms"
+            name="terms"
+            checked
+            required>
 
-                <button>
+        <label for="terms">
 
-                    Get Price Details
+            I agree to the
+            <a href="./terms_condition.html" target="_blank">
+                Terms & Conditions
+            </a>
+            and
+            <a href="./privacy-policy.html" target="_blank">
+                Privacy Policy
+            </a>.
+            I consent to being contacted via call, SMS, WhatsApp, or email regarding this project.
 
-                </button>
+        </label>
 
-            </form>
+    </div>
+
+    <button type="submit">
+
+        Get Price Details
+
+    </button>
+
+</form>
 
         </div>
 
@@ -896,50 +914,60 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
 
             <h3>Request A Callback</h3>
 
-            <form>
-
-                <input
-                    type="text"
-                    placeholder="Full Name"
-                    required>
-
-                <input
-                    type="email"
-                    placeholder="Email Address"
-                    required>
-
-                <input
-                    type="tel"
-                    placeholder="Phone Number"
-                    required>
-
-                    <div class="checkbox-group">
+            <form action="./send-email.php" method="POST">
 
     <input
-        type="checkbox"
-        id="terms"
-        checked
+        type="text"
+        name="name"
+        placeholder="Full Name"
         required>
 
-    <label for="terms">
+    <input
+        type="email"
+        name="email"
+        placeholder="Email Address"
+        required>
 
-        I agree to the
-        <a href="./terms_condition.html">Terms & Conditions</a>
-        and
-        <a href="./privacy-policy.html">Privacy Policy</a>.
-        I consent to being contacted via call, SMS, WhatsApp, or email regarding this project.
+    <input
+        type="tel"
+        name="phone"
+        placeholder="Phone Number"
+        pattern="[0-9]{10}"
+        maxlength="10"
+        required>
 
-    </label>
+    <div class="checkbox-group">
 
-</div>
+        <input
+            type="checkbox"
+            id="terms"
+            name="terms"
+            checked
+            required>
 
-                <button>
+        <label for="terms">
 
-                    Book Site Visit
+            I agree to the
+            <a href="./terms_condition.html" target="_blank">
+                Terms & Conditions
+            </a>
+            and
+            <a href="./privacy-policy.html" target="_blank">
+                Privacy Policy
+            </a>.
+            I consent to being contacted via Call, SMS, WhatsApp and Email regarding this project.
 
-                </button>
+        </label>
 
-            </form>
+    </div>
+
+    <button type="submit">
+
+        Book Site Visit
+
+    </button>
+
+</form>
 
             <!-- <p class="privacy">
 
@@ -956,13 +984,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
 <!-- Floating CTA -->
 
 <div class="floating-cta">
-     <button class="cta enquire open-modal">
-
-        <i class="fa-solid fa-envelope"></i>
-
-        <span>Enquire</span>
-
-    </button>
+     
 
     <a href="tel:+919876543210" class="cta call">
 

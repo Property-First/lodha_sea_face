@@ -29,9 +29,9 @@ a{
 
     backdrop-filter:blur(20px);
 
-    -webkit-backdrop-filter:blur(20px);
+    
 
-    border-bottom:1px solid rgba(255,255,255,.15);
+    /* border-bottom:1px solid rgba(255,255,255,.15); */
 
     box-shadow:0 10px 35px rgba(0,0,0,.08);
 
@@ -194,7 +194,7 @@ nav{
 
     height:calc(100vh - 80px);
 
-    background:rgba(255,255,255,.15);
+    background:rgba(255,255,255,.9);
 
     backdrop-filter:blur(25px);
 
@@ -207,6 +207,7 @@ nav{
 nav.active{
 
     right:0;
+    
 
 }
 
@@ -465,11 +466,11 @@ nav{
 
 .btn{
     display:inline-block;
-    padding:16px 40px;
+    padding:10px 20px;
     background:#C8A95A;
     color:#fff;
     text-decoration:none;
-    border-radius:50px;
+    /* border-radius:50px; */
     font-weight:600;
     transition:.3s;
 }
@@ -542,7 +543,7 @@ nav{
 
         order:2;
 
-        text-align:center;
+        text-align:justify;
 
     }
 
@@ -595,7 +596,7 @@ nav{
 
     .section-title h2{
 
-        font-size:34px;
+        font-size:28px;
 
         line-height:1.2;
 
@@ -748,7 +749,7 @@ section{
 
     padding:16px 42px;
 
-    /* border:1px solid rgba(255,255,255,.15); */
+    border:1px solid rgba(255,255,255,.15);
 
     background:rgba(255,255,255,.04);
 
@@ -868,6 +869,7 @@ section{
     /* line-height:1.9; */
 
     margin-bottom:20px;
+    font-size: 14px;
 
 }
 
@@ -980,13 +982,17 @@ section{
 
     justify-content:center;
 
+    align-items:center;
+
+    /* margin-top:50px; */
+
 }
 
 .master-image{
 
     width:100%;
 
-    max-width:1200px;
+    max-width:900px;
 
     position:relative;
 
@@ -1142,7 +1148,7 @@ section{
 }
 .plan-details h2 {
     /* font-family: 'Cormorant Garamond', serif; */
-    font-size: 28px;
+    font-size: 26px;
     /* margin-bottom: 10px; */
 }
 
@@ -1188,7 +1194,7 @@ section{
 
 section{
 
-    padding:90px 20px;
+    padding:30px 20px;
 
 }
 
@@ -1249,6 +1255,8 @@ section{
     color:#6B7280;
 
     line-height:1.8;
+    /* text-align: justify; */
+    font-size: 13px;
 
 }
 
@@ -1372,7 +1380,7 @@ section{
 
     .section-title h2{
 
-        font-size:36px;
+        font-size:28px;
 
     }
 
@@ -1538,11 +1546,44 @@ gap: 10px;
 
 }
 
+.price-btn{
+
+    display:inline-block;
+
+    padding:10px 5px;
+
+    background:#C8A95A;
+
+    color:#fff;
+    font-size: 13px;
+
+    /* border-radius:50px; */
+transition:.3s;
+
+}
+
+.price-card h2{
+
+    font-family:'Cormorant Garamond',serif;
+
+    font-size: 28px;
+    margin:15px 0;
+
+    color:#1F2937;
+
+}
+
+.price-card p {
+    color: #777;
+    margin-bottom: 10px;
+}
+
 .price-card{
 
 max-width:450px;
 
-margin:auto;
+/* margin:auto; */
+padding: 10px 60px;
 
 }
 
@@ -1556,6 +1597,7 @@ grid-template-columns:repeat(3, 1fr);
 
 gap:8px;
 font-size: 12px;
+padding: 28px 22px;
 
 }
 
@@ -1961,8 +2003,15 @@ font-size:40px;
     .amenities-grid{
 
         grid-template-columns:repeat(2, 1fr);
+        gap: 10px;
 
     }
+
+    .amenity h4 {
+    /* font-family: "Cormorant Garamond", serif; */
+    font-size: 12px;
+    /* color: #222; */
+}
 
 }
 
@@ -2164,13 +2213,22 @@ font-size:40px;
 .contact-wrapper{
 
 grid-template-columns:1fr;
+gap: 10px;
+
+}
+.contact{
+
+    padding: 40px 2%;
+
+    background:#FAFAF8;
 
 }
 
 .contact-left,
 .contact-right{
 
-padding:50px 30px;
+padding:20px 30px;
+border-right: 0px solid #E5E5E5;
 
 }
 
@@ -2788,7 +2846,7 @@ right:18px;
 
 .call{
 
-    background:#0F172A;
+    background:#C8A95A;
 
 }
 
@@ -2830,7 +2888,7 @@ right:18px;
 
     width:100%;
 
-    height:60px;
+    height:40px;
 
     border-radius:0;
 

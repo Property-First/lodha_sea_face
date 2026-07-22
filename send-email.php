@@ -1,20 +1,25 @@
 <?php
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
+//     echo "<pre>";
+// print_r($_POST);
+// echo "</pre>";
+// exit;
 
     // Get form data
     $name  = htmlspecialchars($_POST['name']);
     $phone = htmlspecialchars($_POST['phone']);
     $email = isset($_POST['email']) ? htmlspecialchars($_POST['email']) : '';
 
+   
     // Your email where you want to receive enquiries
     $to = "your@email.com";  // 🔴 CHANGE THIS
 
-    $subject = "New Enquiry from - Godrej Rivershore Plots";
+    $subject = "New Enquiry from - Lodha Sea Face";
 
     // Email message
     $message = "
-    Godrej Rivershore Plots Details:
+    Lodha Sea Face Details:
 
     Name: $name
     Phone: $phone
