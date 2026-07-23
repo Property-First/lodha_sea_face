@@ -1,34 +1,93 @@
 
-document.addEventListener("DOMContentLoaded",()=>{
+// document.addEventListener("DOMContentLoaded",()=>{
 
-const menu=document.querySelector(".menu-toggle");
+// const menu=document.querySelector(".menu-toggle");
 
-const nav=document.querySelector("nav");
+// const nav=document.querySelector("nav");
 
-menu.addEventListener("click",()=>{
+// menu.addEventListener("click",()=>{
 
-nav.classList.toggle("active");
+// nav.classList.toggle("active");
 
+// });
+
+// });
+
+document.addEventListener("DOMContentLoaded", () => {
+    const menuToggle = document.querySelector(".menu-toggle");
+    const nav = document.querySelector("nav");
+    const overlay = document.querySelector(".nav-overlay");
+    const navLinks = document.querySelectorAll("nav a");
+    // console.log("Hiiii");
+//  console.log(menuToggle);
+//  console.log(nav);
+//  console.log(overlay);
+//  console.log(navLinks);
+    const openMenu = () => {
+        nav.classList.add("active");
+        overlay.classList.add("active");
+        document.body.style.overflow = "hidden"; // Block page scroll while menu is open
+    };
+
+    const closeMenu = () => {
+        nav.classList.remove("active");
+        overlay.classList.remove("active");
+        document.body.style.overflow = ""; // Immediately restore page scrolling
+    };
+
+    // Toggle menu button
+    menuToggle.addEventListener("click", () => {
+        if (nav.classList.contains("active")) {
+            closeMenu();
+        } else {
+            openMenu();
+        }
+    });
+
+    // Close when backdrop is clicked
+    overlay.addEventListener("click", closeMenu);
+
+    // console.log(navLinks);
+    // Handle Nav Links
+    navLinks.forEach(link => {
+        link.addEventListener("click", (e) => {
+            console.log(link);
+            const targetId = link.getAttribute("href");
+   console.log(targetId.startsWith("#"));
+            // Only run smooth scroll logic for internal anchor links (starting with #)
+            if (targetId.startsWith("#")) {
+                const targetElement = document.querySelector(targetId);
+                console.log(targetElement);
+
+                if (targetElement) {
+                    // Close the drawer menu
+                    closeMenu();
+
+                    // Perform smooth scroll to the target section
+                    targetElement.scrollIntoView({
+                        behavior: "smooth"
+                    });
+                }
+            }
+        });
+    });
 });
 
-});
+// window.addEventListener("scroll",()=>{
 
+//     const header=document.querySelector(".header");
 
-window.addEventListener("scroll",()=>{
+//     if(window.scrollY>80){
 
-    const header=document.querySelector(".header");
+//         header.classList.add("scrolled");
 
-    if(window.scrollY>80){
+//     }else{
 
-        header.classList.add("scrolled");
+//         header.classList.remove("scrolled");
 
-    }else{
+//     }
 
-        header.classList.remove("scrolled");
-
-    }
-
-});
+// });
 
 document.addEventListener("DOMContentLoaded", () => {
 

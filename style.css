@@ -11,7 +11,11 @@ a{
     text-decoration: none;
 }
 
-.header{
+html, body {
+    overflow-x: hidden;
+}
+
+/* .header{
 
     position:fixed;
 
@@ -31,9 +35,29 @@ a{
 
     
 
-    /* border-bottom:1px solid rgba(255,255,255,.15); */
+    border-bottom:1px solid rgba(255,255,255,.15);
 
     box-shadow:0 10px 35px rgba(0,0,0,.08);
+
+} */
+
+.header{
+
+    position:relative;
+
+    width:100%;
+
+    padding:20px 0;
+
+    background:rgba(255,255,255,.12);
+
+    backdrop-filter:blur(20px);
+
+    -webkit-backdrop-filter:blur(20px);
+
+    box-shadow:0 10px 35px rgba(0,0,0,.08);
+
+    z-index:100;
 
 }
 
@@ -159,23 +183,35 @@ nav a:hover::after{
 
     font-size:30px;
 
-    color:#fff;
+    color: black;
 
     cursor:pointer;
 
 }
 
-.header.scrolled{
+.nav-overlay{
 
-    background:rgba(255,255,255,.12);
+    position:fixed;
 
-    backdrop-filter:blur(20px);
+    inset:1;
 
-    -webkit-backdrop-filter:blur(20px);
+    /* background:rgba(0,0,0,.45); */
 
-    border-bottom:1px solid rgba(255,255,255,.15);
+    opacity:0;
 
-    box-shadow:0 10px 35px rgba(0,0,0,.08);
+    visibility:hidden;
+
+    transition:.3s;
+
+    z-index:1000;
+
+}
+
+.nav-overlay.active{
+
+    opacity:1;
+
+    visibility:visible;
 
 }
 
@@ -202,11 +238,15 @@ nav{
 
     transition:.4s;
 
+    visibility: hidden; 
+        overflow-y: auto;
+
 }
 
 nav.active{
 
     right:0;
+    visibility: visible;
     
 
 }
@@ -230,7 +270,7 @@ nav ul{
 .menu-toggle{
 
     display:block;
-
+z-index: 1001;
 }
 
 }
@@ -255,11 +295,11 @@ nav ul{
 
 }
 
-nav{
+/* nav{
 
     width:100%;
 
-}
+} */
 
 }
 
